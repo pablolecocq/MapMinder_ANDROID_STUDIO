@@ -4,6 +4,12 @@ An Android app to save **geolocated reminders**: capture your current GPS positi
 
 Project developed for the **Android / Mobile Applications** course (4th year, Bachelor's in Industrial Technology Engineering — ETSII, UPM).
 
+## Screenshots
+
+| Main screen (GPS + new marker) | Map with markers | Saved markers list |
+|:---:|:---:|:---:|
+| ![Main screen](media/screenshot-main.png) | ![Map](media/screenshot-map.png) | ![List](media/screenshot-list.png) |
+
 ---
 
 ## Features
@@ -59,7 +65,8 @@ mapminder-android/
 ├── local.defaults.properties           Placeholder for MAPS_API_KEY (real key goes in secrets.properties)
 ├── build.gradle / settings.gradle      Gradle configuration
 └── docs/
-    └── memoria.pdf                      Technical report (Spanish)
+    ├── memoria.pdf                      Technical report (Spanish)
+    └── presentacion.pdf                 Visual walkthrough with screenshots (Spanish)
 ```
 
 ---
