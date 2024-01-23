@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/t"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/etiqLat"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/etiqLat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="0.00"
+        app:layout_constraintStart_toEndOf="@+id/etiqLat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/etiqLon"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/etiqLon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etiqLat" />
+
+    <TextView
+        android:id="@+id/lon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0.00"
+        app:layout_constraintStart_toEndOf="@+id/etiqLon"
+        app:layout_constraintTop_toBottomOf="@+id/lat" />
+
+    <TextView
+        android:id="@+id/etiqAltitud"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/etiqAltitud"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etiqLon" />
+
+    <TextView
+        android:id="@+id/altitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        app:layout_constraintStart_toEndOf="@+id/etiqAltitud"
+        app:layout_constraintTop_toTopOf="@+id/etiqAltitud" />
+
+    <TextView
+        android:id="@+id/etiqPrecision"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/etiqPrecision"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etiqAltitud" />
+
+    <TextView
+        android:id="@+id/precision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        app:layout_constraintStart_toEndOf="@+id/etiqPrecision"
+        app:layout_constraintTop_toTopOf="@+id/etiqPrecision" />
+
+    <TextView
+        android:id="@+id/etiqVelocidad"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/etiqVelocidad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etiqPrecision" />
+
+    <TextView
+        android:id="@+id/velocidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        app:layout_constraintStart_toEndOf="@+id/etiqVelocidad"
+        app:layout_constraintTop_toTopOf="@+id/etiqVelocidad" />
+
+    <TextView
+        android:id="@+id/etiqSensor"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/etiqSensor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sw_gps" />
+
+    <TextView
+        android:id="@+id/sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sensor"
+        app:layout_constraintStart_toEndOf="@+id/etiqSensor"
+        app:layout_constraintTop_toTopOf="@+id/etiqSensor" />
+
+    <TextView
+        android:id="@+id/etiqActualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="@string/etiqActualizar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sw_On_Off_Localizacion" />
+
+    <TextView
+        android:id="@+id/actualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="@string/actualizar"
+        app:layout_constraintStart_toEndOf="@+id/etiqActualizar"
+        app:layout_constraintTop_toTopOf="@+id/etiqActualizar" />
+
+    <Switch
+        android:id="@+id/sw_On_Off_Localizacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:checked="true"
+        android:text="@string/sw_On_Off_Localizacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divisor2" />
+
+    <Switch
+        android:id="@+id/sw_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/sw_gps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etiqActualizar" />
+
+    <TextView
+        android:id="@+id/Direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etiqDireccion"
+        app:layout_constraintTop_toTopOf="@+id/etiqDireccion" />
+
+    <TextView
+        android:id="@+id/etiqDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/etiqDireccion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etiqVelocidad" />
+
+    <View
+        android:id="@+id/divisor1"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="36dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/Direccion"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <View
+        android:id="@+id/divisor2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="124dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/divisor1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <TextView
+        android:id="@+id/etiqNumMarcadores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/etiqNumMarcadores"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etiqSensor" />
+
+    <TextView
+        android:id="@+id/NumMarcadores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/etiqNumMarcadores"
+        app:layout_constraintTop_toBottomOf="@+id/sensor" />
+
+    <Button
+        android:id="@+id/btn_NuevoMarcador"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_NuevoMarcador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etiqNumMarcadores" />
+
+    <Button
+        android:id="@+id/btn_abrirLista"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_abrirLista"
+        android:backgroundTint="#00FFFEFE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_NuevoMarcador"
+        app:layout_constraintBottom_toTopOf="@+id/btn_abrirMapa" />
+
+    <Button
+        android:id="@+id/btn_abrirMapa"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000080"
+        android:text="@string/btn_abrirMapa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_abrirLista" />
+
+    <TextView
+        android:id="@+id/etiqTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="@string/etiqTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divisor1" />
+
+    <EditText
+        android:id="@+id/titulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/titulo"
+        app:layout_constraintBottom_toTopOf="@+id/descripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/etiqTitulo"
+        app:layout_constraintTop_toTopOf="@+id/etiqTitulo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/etiqDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/etiqDescripcion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etiqTitulo"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/descripcion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/descripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etiqDescripcion"
+        app:layout_constraintTop_toTopOf="@+id/etiqDescripcion" />
+
+    <Button
+        android:id="@+id/borrar"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/borrar"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_NuevoMarcador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_NuevoMarcador"
+        app:layout_constraintTop_toBottomOf="@+id/etiqNumMarcadores" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

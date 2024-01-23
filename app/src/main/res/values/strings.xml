@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MapMinder</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="borrar">Borrar recordatorio</string>
+    <string name="etiqLat">Latitud:</string>
+    <string name="etiqLon">Longitud:</string>
+    <string name="etiqAltitud">Altitud:</string>
+    <string name="etiqPrecision">Precisión:</string>
+    <string name="etiqVelocidad">Velocidad:</string>
+    <string name="etiqSensor">Sensor:</string>
+    <string name="sensor">Red móvil + Wifi</string>
+    <string name="etiqActualizar">Actualizar posición:</string>
+    <string name="actualizar">Off</string>
+    <string name="sw_On_Off_Localizacion">Encender localización</string>
+    <string name="sw_gps">GPS/Ahorro de batería</string>
+    <string name="etiqDireccion">"Dirección:  "</string>
+    <string name="btn_NuevoMarcador">Nuevo marcador</string>
+    <string name="btn_abrirLista">Lista de marcadores</string>
+    <string name="btn_abrirMapa">Mapa</string>
+    <string name="etiqTitulo">"Titulo: "</string>
+    <string name="etiqNumMarcadores">Número de marcadores:</string>
+    <string name="descripcion">Inserte descripción</string>
+    <string name="etiqDescripcion">"Nota: "</string>
+    <string name="titulo">Inserte título</string>
+</resources>
