@@ -1,4 +1,8 @@
-# MapMinder — Android GPS reminders
+<p align="center">
+  <img src="media/logo.jpg" alt="MapMinder logo" width="220">
+</p>
+
+<h1 align="center">MapMinder — Android GPS reminders</h1>
 
 An Android app to save **geolocated reminders**: capture your current GPS position, attach a title and a note, and review your saved markers both as a list and on a Google Map.
 
