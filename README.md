@@ -75,8 +75,6 @@ mapminder-android/
 
 ---
 
-## Authors
+## Author
 
-Team project (Group A1) — Android Programming course, Bachelor's in Industrial Technology Engineering, ETSII (UPM).
-
-Pablo Lecocq · Andrea Barros · Rodrigo Díaz.
+Pablo Lecocq — Android Programming course, Bachelor's in Industrial Technology Engineering, ETSII (UPM).
